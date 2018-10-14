@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>app</title>
+
+</head>
+<body>
+    <form class="form-group container">
+
+        <div>
+            <input
+            name="name"
+            class="form-control"
+            type="text"
+            id="name"
+            required
+            >
+            <label for="name">Name</label>
+        </div>
+        <div>
+            <select id="country" name="country_id" class="form-control" required>
+                <option value=" "></option>
+            </select>
+            <label>Country</label>
+        </div>
+        <div>
+            <select id="city" name="city_id" class="form-control" type="number" required>
+                
+            </select>
+            <label>City</label>
+
+        </div>
+        <div>
+            <input id="date_of_birth" name="date_of_birth" class="form-control" required="required">
+            <label for="date_of_birth">Date Of Birth</label>
+        </div>
+        <div style="justify-content: start">
+           <div id="gender">
+                <div>
+                        <label>gender</label>
+                </div>
+                    
+                <div>
+                    <label for="">Male</label>
+                    <input
+                    name="gender"
+                    class="form-control"
+                    type="radio"
+                    id="male">
+                </div>
+                <div>
+                    <label>Female</label>
+                    <input
+                    name="gender"
+                    class="form-control"
+                    type="radio"
+                    id="female"
+                    >
+                </div>
+            </div>
+            
+        </div>
+        <div id="male-question" style="justify-content: start">
+                <input
+                name="male_question"
+                class="form-control"
+                type="text"
+                id="male_question"
+                >
+                <label for="male_question">How do you Mr ?:</label>
+        </div>
+        <div id="female-question" style="justify-content: start">
+                <input
+                name="female_question"
+                class="form-control"
+                type="text"
+                id="female_question"
+                >
+                <label for="female_question">How do you Mis ?:</label>
+        </div>
+
+        <button id="button" class="btn btn-danger" type="submit">submit</button>
+        
+    </form>
+
+    <div class="data"></div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js//functions.js" type="application/javascript"></script>
+</body>
+</html>

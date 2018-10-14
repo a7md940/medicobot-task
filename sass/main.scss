@@ -1,0 +1,113 @@
+
+body{
+    margin:0;
+    padding: 2% 0;
+    font-family: 'Open Sans';
+}
+
+
+form{
+    width:50% !important;
+    font-size: 14px;
+}
+form > div{
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 35px;
+    & > label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        transition: .3s all ease-in-out;
+    }
+    input:focus ~ label{
+        top: -20px;
+    }
+
+    select{
+        position: relative;
+        & + label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            transition: .3s all ease-in-out;
+        }
+        &:focus ~ label{
+            top: -20px;
+        } 
+    }
+}
+
+#gender{
+    display:flex;
+
+    & > div{
+        margin-right: 50px;
+        display:flex;
+        align-items: center;
+
+        input[type=radio]{
+            margin-left:10px;
+            margin-top: -5px;
+
+            &:focus{}
+        }
+    }
+
+    #male,#female{
+
+        &:focus ~ label{
+            display:none;
+        }
+    }
+}
+input[type="text"],
+input[type="number"]{
+    
+}
+input[type="checkbox"],
+input[type="radio"]{
+    width: 20px !important;
+}
+
+
+
+#button{
+    width:300px;
+    margin: 30px auto;
+    display: block;
+}
+.data{
+    flex-direction: column;
+}
+
+section{
+    width: 30%;
+    margin: 0 auto;
+}
+section > div{
+    justify-content: flex-start;
+}
+
+    section div label{
+        margin-right: 30px;
+    }
+    form > div:nth-of-type(4){
+        flex-wrap: wrap;
+    }
+    form > div:nth-of-type(4) .tags-container{
+        flex-wrap:wrap;
+        justify-content: start;
+        flex-basis:100%;
+    }
+ 
+
+    #male-question{
+        display:none;
+    }
+
+    #female-question{
+        display:none;
+    }
