@@ -10,7 +10,7 @@
   * 
   * make all field required
   */
-
+ //$('.form-control:required').parent().append('<span>*</span>');
 function log (msg){
     console.log(msg);
 }
@@ -70,18 +70,6 @@ femaleQues = $('#female_question').val();                 // female question
    
 
 
-
-/*
-getCountries(function(data){
-    log(data[0].id)
-})
-  */
-
-
-
-   
-
-
     $('#gender').click(function(){
     if( $('#male').is(':checked') ){
         $('#male-question').css({display: 'flex'})
@@ -121,6 +109,11 @@ getCountries(function(data){
             } else{
                 return null
             }
+        }
+
+        // required fields validation
+        if($('#name').val() == "" || country.val() == "" || city.val() == "" || dateOfBirth.val() == "" ){
+            return alert('complete the required fields')
         }
         
 

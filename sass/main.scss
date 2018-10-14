@@ -5,7 +5,20 @@ body{
     font-family: 'Open Sans';
 }
 
-
+/* alert */
+.alert span{
+    color:red;
+}
+form > div {
+    &::after{
+        content: '*';
+        color:red;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -15px;
+    }
+}
 form{
     width:50% !important;
     font-size: 14px;
@@ -36,6 +49,7 @@ form > div{
         }
         &:focus ~ label{
             top: -20px;
+            font-size: 18px;
         } 
     }
 }
